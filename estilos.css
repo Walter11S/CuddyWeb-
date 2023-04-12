@@ -1,1 +1,149 @@
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f1f1f1;
+}
+
+header {
+    background-color: #233c70;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilos específicos */
+
+#caracteristicas li:before {
+    content: "\2022";
+    color: #f1c40f;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#instalacion ol {
+    list-style: decimal;
+    margin-left: 40px;
+}
+
+#instalacion ol li {
+    margin-bottom: 10px;
+}
+
+#contacto ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#contacto li {
+    margin: 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    .logo img {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+}
 
